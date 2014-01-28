@@ -39,17 +39,32 @@
             <li><a href="#about">Resources</a></li>
             <li><a href="#contact">Sign Up</a></li>
           </ul>
-          <div class="navbar-right"><i class="fa fa-facebook fa-2x"></i></div>
-          <div class="navbar-right"><i class="fa fa-twitter fa-2x"></i></div>
-          <div class="navbar-right"><i class="fa fa-linkedin fa-2x"></i></div>
-          <div class="navbar-right"><i class="fa fa-youtube fa-2x"></i></div>
+          <div class="navbar-right">
+            <div class="social-circle">
+              <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+            </div>
+            <div class="social-circle">
+              <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+            </div>
+            <div class="social-circle">
+              <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+            </div>
+            <div class="social-circle">
+              <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+            </div>
+          </div>
         </div>
 
         <!--/.navbar-collapse -->
 
       </div>
     </div>
-    <div id="screenFill"></div>
+    <div id="screenFill">
+      <div class="hero">
+        <h1>PayPal Supports Startups Like You</h1>
+        <span>Sign up for Shopify's Build-A-Business and get a <strong>$50 credit</strong> towards your PayPal account</span>
+      </div>
+    </div>
     <div id="makeItScroll"></div>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
@@ -63,6 +78,30 @@
             //(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             //g.src='//www.google-analytics.com/ga.js';
             //s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <script type="text/javascript">
+          console.log($('.navbar-nav>li>a'));
+          $(window).scroll(function () {
+              if ($(document).scrollTop() == 0) {
+                  $('.navbar').removeClass('small-nav');
+                  $('.navbar-brand').removeClass('small-nav');
+                  $('ul.nav.navbar-nav').removeClass('small-nav');
+                  $('a.navbar-brand img').removeClass('small-nav');
+                  $('.navbar-nav>li>a').removeClass('small-nav');
+                  $('.navbar i.fa').removeClass('small-nav');
+                  $('.social-circle').removeClass('small-nav');
+                  //$('#screenFill').removeClass('small-nav');
+              } else {
+                  $('.navbar').addClass('small-nav');
+                  $('.navbar-brand').addClass('small-nav');
+                  $('ul.nav.navbar-nav').addClass('small-nav');
+                  $('a.navbar-brand img').addClass('small-nav');
+                  $('.navbar-nav>li>a').addClass('small-nav');
+                  $('.navbar i.fa').addClass('small-nav');
+                  $('.social-circle').addClass('small-nav');
+                  //$('#screenFill').addClass('small-nav');
+              }
+          });
         </script>
     </body>
 </html>

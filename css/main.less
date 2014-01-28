@@ -1,4 +1,6 @@
-@import "bootstrap-overrides.less";
+@import "min-768.less";
+
+
 
 html, body {
   height: 100%;
@@ -7,11 +9,11 @@ html, body {
 
 #screenFill {
   position: relative;
-  top: 80px;
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: url(../img/moaifield.JPG) no-repeat center center;
+  background: url(../img/bg_hero_jewlery.jpg) no-repeat center 62px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,10 +22,114 @@ html, body {
 
 #makeItScroll {
   height: 450px;
-  background: yellow;
+  background: white;
 }
 
 .navbar i.fa {
-  padding: 27px 20px;
   line-height: 50px;
+  transition: all 250ms ease-in-out;
+  color: rgba(68, 68, 68, 0.35);
 }
+
+.navbar a:hover i.fa {
+  color: rgba(68, 68, 68, 0.75);
+}
+
+.social-circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 25px;
+  margin-left: 18px;
+  margin: 27px 0 27px 20px;
+  float: right;
+  transition: all 250ms ease-in-out;
+}
+
+.social-circle .fa-facebook {
+  padding: 0 18px;
+}
+
+.social-circle .fa-twitter {
+  padding: 0 10px;
+}
+
+.social-circle .fa-linkedin, .social-circle .fa-youtube {
+  padding: 0 11px;
+}
+
+.hero {
+  position: absolute;
+  top: 28%;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 68px;
+  color: #f1f1f1;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+.hero span {
+  font-size: 24px;
+  color: #f1f1f1;
+  text-shadow: 0px 2px 1px black;
+}
+
+.hero span strong {
+  color: #53D55F;
+}
+
+//Small nav on page scroll
+
+.navbar.small-nav {
+  min-height: 62px;
+}
+
+ul.nav.navbar-nav.small-nav {
+  left: 147px;
+}
+
+.navbar-brand.small-nav {
+  padding: 17px 10px 9px;
+}
+
+a.navbar-brand img.small-nav {
+  width: 142px;
+}
+
+.navbar-nav>li>a.small-nav {
+  padding: 6px 10px;
+}
+
+.social-circle.small-nav {
+  width: 36px;
+  height: 36px;
+  margin: 13px 0 13px 20px;
+}
+
+.social-circle.small-nav .fa-facebook {
+  padding: 0 13px;
+}
+
+.social-circle.small-nav .fa-twitter {
+  padding: 0 8px;
+}
+
+.social-circle.small-nav .fa-linkedin, .social-circle.small-nav .fa-youtube {
+  padding: 0 9px;
+}
+
+.navbar i.fa.small-nav {
+  //padding: 6px 20px;
+  font-size: 1.3333333333333333em;
+  vertical-align: -15%;
+  line-height: 36px;
+}
+
+@import "bootstrap-overrides.less";
