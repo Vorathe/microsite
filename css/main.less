@@ -1,23 +1,14 @@
-@import "min-768.less";
+/*----------------------------------------------------//
+//-------------------Normalize CSS-------------------//
+//--------------------------------------------------*/
+@import "normalize.less";
 
-
-
+/*----------------------------------------------------//
+//------------------Page Foundation------------------//
+//--------------------------------------------------*/
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#screenFill {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../img/bg_hero_jewlery.jpg) no-repeat center 62px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 #makeItScroll {
@@ -25,9 +16,12 @@ html, body {
   background: white;
 }
 
+/*----------------------------------------------------//
+//-------------------Nav Bar Icons-------------------//
+//--------------------------------------------------*/
 .navbar i.fa {
   line-height: 50px;
-  transition: all 250ms ease-in-out;
+  .transition(all 250ms ease-in-out);
   color: rgba(68, 68, 68, 0.35);
 }
 
@@ -44,7 +38,7 @@ html, body {
   margin-left: 18px;
   margin: 27px 0 27px 20px;
   float: right;
-  transition: all 250ms ease-in-out;
+  .transition(all 250ms ease-in-out);
 }
 
 .social-circle .fa-facebook {
@@ -57,6 +51,22 @@ html, body {
 
 .social-circle .fa-linkedin, .social-circle .fa-youtube {
   padding: 0 11px;
+}
+
+/*----------------------------------------------------//
+//---------------------Hero Unit---------------------//
+//--------------------------------------------------*/
+#heroFill {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/bg_hero_jewlery.jpg) no-repeat center 62px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .hero {
@@ -78,15 +88,97 @@ html, body {
 .hero span {
   font-size: 24px;
   color: #f1f1f1;
-  text-shadow: 0px 2px 1px black;
+  text-shadow: 0px 1px 1px black, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .hero span strong {
   color: #53D55F;
 }
 
-//Small nav on page scroll
+.hero span.choice {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: none;
+  border-radius: 32px;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  margin-left: -32px;
+  position: absolute;
+  -webkit-transform: rotate(-15deg);
+}
 
+#heroChoiceWrap {
+  margin: 40px 0;
+}
+
+#heroChoiceWrap #wrap {
+  position: relative;
+}
+
+.choice-border-left {
+  border-top: 2px solid white;
+  width: 36px;
+  position: absolute;
+  left: 50%;
+  margin-left: -84px;
+  top: 32px;
+}
+
+.choice-border-right {
+  border-top: 2px solid white;
+  width: 36px;
+  position: absolute;
+  left: 50%;
+  margin-left: 42px;
+  top: 32px;
+}
+
+#discoverMore {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -77px;
+  text-shadow: 0px 1px 1px black, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#discoverMore a {
+  color: #057bbf;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#discoverMore a span {
+  display: block;
+  font-weight: 300;
+  color: white;
+  font-size: 24px;
+}
+
+#discoverMore i {
+  margin-left: 22px;
+  margin-bottom: 70px;
+  color: black;
+  opacity: 0.65;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  .transition(margin 250ms ease-in-out);
+
+  &:hover {
+    margin-bottom: 50px;
+    margin-top: 20px;    
+  }
+}
+
+.fa-10x {
+  font-size: 8em;
+}
+
+/*----------------------------------------------------//
+//-------------------Shrunken Nav--------------------//
+//--------------------------------------------------*/
 .navbar.small-nav {
   min-height: 62px;
 }
@@ -126,10 +218,24 @@ a.navbar-brand img.small-nav {
 }
 
 .navbar i.fa.small-nav {
-  //padding: 6px 20px;
   font-size: 1.3333333333333333em;
   vertical-align: -15%;
   line-height: 36px;
 }
 
+/*----------------------------------------------------//
+//---------------------Bootstrap---------------------//
+//--------------------------------------------------*/
+@import "/bootstrap/bootstrap.less";
+/*----------------------------------------------------//
+//----------------Bootstrap Overrides----------------//
+//--------------------------------------------------*/
 @import "bootstrap-overrides.less";
+/*----------------------------------------------------//
+//----------------------Buttons----------------------//
+//--------------------------------------------------*/
+@import "buttons.less";
+/*----------------------------------------------------//
+//------------------Max Width 992--------------------//
+//--------------------------------------------------*/
+@import "max-992.less";

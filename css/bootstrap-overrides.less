@@ -1,5 +1,6 @@
 .navbar {
 	background-color: white !important;
+  .transition(all 250ms ease-in-out);
 }
 
 .navbar-right {
@@ -18,17 +19,17 @@
 ul.nav.navbar-nav {
   position: absolute;
   left: 220px;
-  transition: left 250ms ease-in-out;
+  .transition(left 250ms ease-in-out);
 }
 
 .navbar-brand {
 	padding: 30px 10px 20px 10px;
-  transition: all 250ms ease-in-out;
+  .transition(all 250ms ease-in-out);
 }
 
 .navbar-brand img {
   width: 100%;
-  transition: all 250ms ease-in-out;
+  .transition(all 250ms ease-in-out);
 }
 
 ul.nav>li>a {
@@ -39,7 +40,7 @@ ul.nav>li>a {
   line-height: 50px;
   padding-right: 20px;
   padding-left: 20px;
-  transition: background-color 0.2s ease-in-out, padding 250ms ease-in-out;
+  .transition(padding 250ms ease-in-out);
 }
 
 ul.nav>li:last-child>a {
