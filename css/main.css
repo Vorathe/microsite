@@ -180,6 +180,9 @@ body {
   height: 100%;
   font-family: 'Open Sans', sans-serif !important;
 }
+h1 {
+  font-family: 'Open Sans', sans-serif !important;
+}
 #makeItScroll {
   height: 450px;
   background: white;
@@ -227,29 +230,99 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url(../img/bg_hero_jewlery.jpg) no-repeat center 62px;
+  margin-top: -26px;
+  min-height: 768px;
+  background-color: #161616;
+}
+#bgFade {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+.skate-shop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_skateshop.jpg) no-repeat center center;
+}
+.jewlery-shop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_jewlery.jpg) no-repeat center center;
+}
+.silverware-shop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_silverware.jpg) no-repeat center center;
+}
+.sports-shop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_sports.jpg) no-repeat center center;
+}
+.fashion-shop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_fashion.jpg) no-repeat center center;
+}
 .hero {
   position: absolute;
-  top: 28%;
+  top: 25%;
   width: 100%;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 40px;
+  z-index: 2;
 }
 .hero h1 {
   font-weight: 800;
   font-size: 68px;
   color: #f1f1f1;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 8px 23px rgba(0, 0, 0, 0.1);
 }
 .hero span {
   font-size: 24px;
   color: #f1f1f1;
-  text-shadow: 0px 1px 1px #000000, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 1px 1px #000000, 0px 2px 3px rgba(0, 0, 0, 0.4), 0px 6px 8px rgba(0, 0, 0, 0.1), 0px 4px 23px rgba(0, 0, 0, 0.1);
 }
 .hero span strong {
   color: #53D55F;
@@ -294,32 +367,43 @@ body {
   bottom: 0;
   left: 50%;
   margin-left: -77px;
-  text-shadow: 0px 1px 1px #000000, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 #discoverMore a {
-  color: #057bbf;
+  color: #ddd;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 #discoverMore a:hover {
   text-decoration: none;
+  color: white;
 }
 #discoverMore a span {
   display: block;
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
   color: white;
-  font-size: 24px;
+  text-shadow: 0px 1px 1px #000000, 0px 2px 3px rgba(0, 0, 0, 0.4), 0px 6px 8px rgba(0, 0, 0, 0.1), 0px 4px 23px rgba(0, 0, 0, 0.1);
 }
 #discoverMore i {
   margin-left: 22px;
   margin-bottom: 70px;
-  color: black;
-  opacity: 0.65;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  -webkit-transition: margin 250ms ease-in-out;
-  transition: margin 250ms ease-in-out;
+  text-shadow: 0px 3px 0px #03456b, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  color: #057bbf;
+  -webkit-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
 }
 #discoverMore i:hover {
-  margin-bottom: 50px;
-  margin-top: 20px;
+  color: #318cd1;
+}
+#discoverMore i:active {
+  text-shadow: 0px 1px 0px #03456b;
+  -moz-transform: translateX(0px) translateY(2px);
+  -webkit-transform: translateX(0px) translateY(2px);
+  -o-transform: translateX(0px) translateY(2px);
+  -ms-transform: translateX(0px) translateY(2px);
+  transform: translateX(0px) translateY(2px);
 }
 .fa-10x {
   font-size: 8em;
@@ -338,6 +422,8 @@ ul.nav.navbar-nav.small-nav {
 }
 a.navbar-brand img.small-nav {
   width: 142px;
+  -webkit-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
 }
 .navbar-nav > li > a.small-nav {
   padding: 6px 10px;
@@ -6181,8 +6267,8 @@ ul.nav.navbar-nav {
 }
 .navbar-brand img {
   width: 100%;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
 }
 ul.nav > li > a {
   color: #444;
@@ -6198,6 +6284,89 @@ ul.nav > li > a {
 ul.nav > li:last-child > a {
   color: #057bbf;
   font-weight: 700;
+}
+.navbar-toggle .icon-bar {
+  background-color: #767676;
+}
+.btn:hover,
+.btn:focus {
+  color: white;
+  text-decoration: none;
+}
+.btn:focus,
+a:focus {
+  outline: none;
+}
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+  min-height: 768px;
+}
+.item:nth-child(1) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_skateshop.jpg) no-repeat center center;
+}
+.item:nth-child(2) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_jewlery.jpg) no-repeat center center;
+}
+.item:nth-child(3) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_sports.jpg) no-repeat center center;
+}
+.item:nth-child(4) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_silverware.jpg) no-repeat center center;
+}
+.item:nth-child(5) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_fashion.jpg) no-repeat center center;
 }
 /*----------------------------------------------------//
 //----------------------Buttons----------------------//
@@ -6221,7 +6390,7 @@ ul.nav > li:last-child > a {
 }
 .btn:hover {
   background: #318cd1;
-  color: #fff;
+  color: #fff !important;
 }
 .btn:active {
   box-shadow: 0px 1px 0px #03456b;
@@ -6249,6 +6418,84 @@ ul.nav > li:last-child > a {
 }
 .btn i {
   margin-left: 10px;
+}
+/*----------------------------------------------------//
+//------------------Min Width 768--------------------//
+//--------------------------------------------------*/
+@media (max-width: 400px) {
+  .hero {
+    padding: 0 20px;
+  }
+  .btn.cta {
+    margin: 20px;
+  }
+}
+/*----------------------------------------------------//
+//------------------Min Width 768--------------------//
+//--------------------------------------------------*/
+@media (min-width: 768px) {
+  .hero {
+    top: 19%;
+  }
+}
+/*----------------------------------------------------//
+//------------------Min Width 992--------------------//
+//--------------------------------------------------*/
+@media (max-width: 768px) {
+  .hero {
+    top: 19%;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero span {
+    font-size: 18px;
+  }
+  .btn.cta {
+    font-size: 22px;
+  }
+  #discoverMore a span {
+    font-size: 18px;
+  }
+  .fa-10x {
+    font-size: 5em;
+  }
+  #discoverMore {
+    margin-left: -67px;
+  }
+  #discoverMore i {
+    margin-left: 34px;
+  }
+  .navbar {
+    max-height: 62px;
+  }
+  ul.nav.navbar-nav {
+    position: static;
+    left: auto;
+  }
+  .navbar-collapse {
+    background-color: #f7f7f7;
+  }
+  .social-circle {
+    float: none;
+  }
+  .navbar-right {
+    text-align: center;
+  }
+  .navbar-toggle {
+    margin: 14px 0;
+  }
+}
+/*----------------------------------------------------//
+//------------------Min Width 992--------------------//
+//--------------------------------------------------*/
+@media (min-width: 992px) {
+  .carousel {
+    min-height: 768px;
+  }
+  .hero {
+    top: 19%;
+  }
 }
 /*----------------------------------------------------//
 //------------------Max Width 992--------------------//
@@ -6301,5 +6548,18 @@ ul.nav > li:last-child > a {
   .navbar-nav > li > a {
     padding-top: 6px !important;
     padding-bottom: 6px !important;
+  }
+}
+/*----------------------------------------------------//
+//------------------Min Width 1200-------------------//
+//--------------------------------------------------*/
+@media (min-width: 1200px) {
+  .hero {
+    top: 19%;
+  }
+}
+@media (min-width: 1400px) {
+  .hero {
+    top: 25%;
   }
 }

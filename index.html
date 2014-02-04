@@ -58,7 +58,8 @@
 
       </div>
     </div>
-    <div id="heroFill">
+    
+    <div style="height: 100%; min-height: 768px; position: relative;">
       <div class="hero">
         <h1>PayPal Supports Startups Like You</h1>
         <span>Sign up for Shopify's Build-A-Business with PayPal and you could win <strong>$50,000</strong> cash and a VIP trip to New York</span>
@@ -71,6 +72,27 @@
           <span>Find Out How</span>
           <i class="fa fa-arrow-circle-o-down fa-10x"></i>
         </a>
+      </div>
+      <div id="carousel" class="carousel slide carousel-fade">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
+        </ol>
+        <!-- Carousel items -->
+
+        <div class="carousel-inner">
+          <div class="active item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
       </div>
     </div>
     <div id="makeItScroll"></div>
@@ -98,7 +120,6 @@
                   $('.navbar-nav>li>a').removeClass('small-nav');
                   $('.navbar i.fa').removeClass('small-nav');
                   $('.social-circle').removeClass('small-nav');
-                  //$('#screenFill').removeClass('small-nav');
               } else {
                   $('.navbar').addClass('small-nav');
                   $('.navbar-brand').addClass('small-nav');
@@ -107,9 +128,9 @@
                   $('.navbar-nav>li>a').addClass('small-nav');
                   $('.navbar i.fa').addClass('small-nav');
                   $('.social-circle').addClass('small-nav');
-                  //$('#screenFill').addClass('small-nav');
               }
           });
+          $('.carousel').carousel();
         </script>
     </body>
 </html>

@@ -29,7 +29,7 @@ ul.nav.navbar-nav {
 
 .navbar-brand img {
   width: 100%;
-  .transition(all 250ms ease-in-out);
+  .transition(width 250ms ease-in-out);
 }
 
 ul.nav>li>a {
@@ -49,4 +49,106 @@ ul.nav>li:last-child>a {
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #767676;
+}
+
+.btn:hover, .btn:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:focus, a:focus {
+  outline: none;
+}
+
+a:hover, a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
+
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+  height: 100%;
+  min-height: 768px;
+}
+
+.item:nth-child(1) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_skateshop.jpg) no-repeat center center;
+}
+
+.item:nth-child(2) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_jewlery.jpg) no-repeat center center;
+}
+
+.item:nth-child(3) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_sports.jpg) no-repeat center center;
+}
+
+.item:nth-child(4) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_silverware.jpg) no-repeat center center;
+  
+}
+
+.item:nth-child(5) {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/bg_hero_fashion.jpg) no-repeat center center;
 }
