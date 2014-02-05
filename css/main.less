@@ -11,8 +11,16 @@ html, body {
   font-family: 'Open Sans', sans-serif !important;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif !important;
+}
+
+h1, h2, h3 {
+  color: #444 !important;
+}
+
+p, span {
+  color: #767676 !important;
 }
 
 #makeItScroll {
@@ -149,6 +157,12 @@ h1 {
   background: url(../img/bg_hero_fashion.jpg) no-repeat center center;
 }
 
+#heroWrap {
+  height: 100%;
+  min-height: 768px;
+  position: relative;
+}
+
 .hero {
   position: absolute;
   top: 25%;
@@ -159,14 +173,14 @@ h1 {
 }
 
 .hero h1 {
-  font-weight: 800;
+  font-weight: 800 !important;
   font-size: 68px;
-  color: #f1f1f1;
+  color: #f1f1f1 !important;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 8px 23px rgba(0, 0, 0, 0.1);
 }
 .hero span {
   font-size: 24px;
-  color: #f1f1f1;
+  color: #f1f1f1 !important;
   text-shadow: 0px 1px 1px #000000, 0px 2px 3px rgba(0, 0, 0, 0.4), 0px 6px 8px rgba(0, 0, 0, 0.1), 0px 4px 23px rgba(0, 0, 0, 0.1);
 }
 
@@ -218,8 +232,11 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -77px;
   z-index: 2;
+  background: rgba(0, 0, 0, 0.35);
+  margin-left: -47px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #discoverMore a {
@@ -232,24 +249,14 @@ h1 {
   }
 }
 
-#discoverMore a span {
-  display: block;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: white;
-  text-shadow: 0px 1px 1px #000000, 0px 2px 3px rgba(0, 0, 0, 0.4), 0px 6px 8px rgba(0, 0, 0, 0.1), 0px 4px 23px rgba(0, 0, 0, 0.1);
-}
-
 #discoverMore i {
-  margin-left: 22px;
-  margin-bottom: 70px;
-  text-shadow: 0px 3px 0px #03456b, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  color: #057bbf;
+  margin: 20px;
+  text-shadow: 0px 3px 0px #5E5E5E, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  color: #ddd;
   .transition(all 50ms ease-in-out);
 
   &:hover {
-    color: #318cd1;
+    color: #fff;
   }
   
   &:active {
@@ -262,15 +269,13 @@ h1 {
   }
 }
 
-.fa-10x {
-  font-size: 8em;
-}
-
 /*----------------------------------------------------//
 //-------------------Shrunken Nav--------------------//
 //--------------------------------------------------*/
 .navbar.small-nav {
   min-height: 62px;
+  border-bottom-color: #bbb;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 ul.nav.navbar-nav.small-nav {
@@ -315,6 +320,197 @@ a.navbar-brand img.small-nav {
 }
 
 /*----------------------------------------------------//
+//--------------Responsive YouTube Embed-------------//
+//--------------------------------------------------*/
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*----------------------------------------------------//
+//-----------------------Counter---------------------//
+//--------------------------------------------------*/
+
+
+#counterWrap span {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #444 !important;
+}
+
+#counterSectionWrap a.btn {
+  margin: 26px 10px 26px 0;
+}
+
+.counter {
+  diplay: inline-block;
+  font-weight: 300;
+  font-style: italic;
+  color: #767676;
+}
+
+.ds-element {
+  display: inline-block;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.ds-element-value {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  line-height: 42px;
+  color: rgba(68, 68, 68, 0.35);
+  font-style: normal;
+  font-weight: 800;
+  background-color: #f1f1f1;
+  box-shadow: inset 0px 1px 2px rgb(234, 234, 234);
+}
+
+.over-header {
+  position: absolute;
+  background-color: #ececec;
+  left: 50%;
+  top: -40px;
+  height: 40px;
+  border: 1px solid #dddddd;
+  border-bottom-color: #ececec;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.over-header.how-it-works {
+  margin-left: -130px;
+  width: 260px;  
+}
+
+.over-header.lift-sales {
+  width: 560px;
+  margin-left: -280px;
+}
+
+.over-header h2 {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.section-statement {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.row.blue .section-statement {
+  color: #f1f1f1 !important;
+  margin-bottom: 10px;
+}
+
+#worksCircles {
+  text-align: center;
+}
+
+.works-circle {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #057bbf;
+  border-radius: 100px;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+}
+
+.works-circle > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.works-circle > span {
+  position: absolute;
+  bottom: -72px;
+  display: block;
+  width: 100%;
+  left: 0;
+  font-style: italic;
+  font-weight: 300;
+  color: #444 !important;
+  font-size: 18px;
+}
+
+.works-circle > img.shopify {
+  margin-top: -43px;
+  margin-left: -38px;
+}
+
+.works-circle > img.paypal {
+  margin-top: -39px;
+  margin-left: -39px;
+}
+
+.works-circle > img.comments {
+  margin-top: -33px;
+  margin-left: -42px;
+}
+
+.works-circle > img.leaderboard {
+  margin-top: -42px;
+  margin-left: -42px;
+}
+
+#liftSales {
+  text-align: center;
+}
+
+#liftSales .container .col-lg-12 .btn {
+  margin: 40px 0;
+}
+
+#liftSales #paypalBrands.row {
+  padding: 0;
+}
+
+#signUp h2 {
+  text-align: center;
+  color: #f1f1f1 !important;
+  margin-bottom: 40px;
+}
+
+.signup-agreement {
+  font-weight: 300;
+  max-width: 290px;
+}
+
+#footer {
+  background-color: #444;
+  padding: 20px 0;
+  color: #dededd !important;
+  border-top: 1px solid #767676;
+  font-weight: 300;
+}
+
+#footer span {
+  color: #dededd !important;
+}
+
+
+
+/*----------------------------------------------------//
 //---------------------Bootstrap---------------------//
 //--------------------------------------------------*/
 @import "/bootstrap/bootstrap.less";
@@ -329,15 +525,15 @@ a.navbar-brand img.small-nav {
 /*----------------------------------------------------//
 //------------------Min Width 768--------------------//
 //--------------------------------------------------*/
-@import "max-400.less";
-/*----------------------------------------------------//
-//------------------Min Width 768--------------------//
-//--------------------------------------------------*/
 @import "min-768.less";
 /*----------------------------------------------------//
 //------------------Min Width 992--------------------//
 //--------------------------------------------------*/
 @import "max-768.less";
+/*----------------------------------------------------//
+//------------------Miax Width 400-------------------//
+//--------------------------------------------------*/
+@import "max-400.less";
 /*----------------------------------------------------//
 //------------------Min Width 992--------------------//
 //--------------------------------------------------*/
@@ -350,3 +546,7 @@ a.navbar-brand img.small-nav {
 //------------------Min Width 1200-------------------//
 //--------------------------------------------------*/
 @import "min-1200.less";
+/*----------------------------------------------------//
+//------------------Min Width 1400-------------------//
+//--------------------------------------------------*/
+@import "min-1400.less";

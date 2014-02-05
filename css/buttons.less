@@ -5,6 +5,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   font-weight: 900;
+  font-size: 18px;
   background: #057bbf;
   padding: 15px 25px;
   margin: 10px;
@@ -48,8 +49,26 @@
     margin: 40px;
     padding: 15px 50px;
   }
+
+  &.white {
+    background: #ececec;
+    color: #057bbf;
+    box-shadow: 0px 3px 0px #989898, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 1px 1px #b0b0b0;
+
+    
+
+    &:hover {
+      background: #fff;
+      color: #057bbf !important;
+    }
+  }
   
   i {
     margin-left: 10px;
   }
+}
+
+button[type=submit].btn {
+  margin: 0;
 }
