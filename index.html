@@ -8,10 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
 
@@ -29,27 +28,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/logo_nav.jpg"></a>
+          <a class="navbar-brand" href="/landingexp"><img src="img/logo_nav.jpg"></a>
         </div>
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Features</a></li>
-            <li><a href="#about">Resources</a></li>
-            <li><a href="#contact">Sign Up</a></li>
+            <li class="active"><a href="features.html">Features</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="#signUpModal" data-toggle="modal">Sign Up</a></li>
           </ul>
           <div class="navbar-right">
             <div class="social-circle">
-              <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+              <a href="#youtube"><i class="fa fa-youtube fa-2x"></i></a>
             </div>
             <div class="social-circle">
-              <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+              <a href="#linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
             </div>
             <div class="social-circle">
-              <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+              <a href="#twitter"><i class="fa fa-twitter fa-2x"></i></a>
             </div>
             <div class="social-circle">
-              <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+              <a href="#facebook"><i class="fa fa-facebook fa-2x"></i></a>
             </div>
           </div>
         </div>
@@ -64,11 +63,11 @@
         <h1>PayPal Supports Startups Like You</h1>
         <span>Sign up for Shopify's Build-A-Business with PayPal and you could win <strong>$50,000</strong> cash and a VIP trip to New York</span>
         <div id="heroButtonWrap">
-          <a href="#" class="btn cta">Sign up</a>
+          <a href="#signUpModal" data-toggle="modal" class="btn cta">Sign up</a>
         </div>
       </div>
       <div id="discoverMore">
-        <a href="#">
+        <a href="#down" id="scrollToContent">
           <i class="fa fa-arrow-circle-o-down fa-4x"></i>
         </a>
       </div>
@@ -96,17 +95,16 @@
     </div>
     <div id="competition" class="row white">
       <div class="container">
-        <div class="col-lg-6">
+        <div id="videoText" class="col-lg-6">
           <h2>Join the Competition</h2>
           <p>Introducing Shopify's 4th Build A Business Competition in partnership with The Huffington Post.</p>
           <p>This year, the nine stores that sell the most over a two-month period will each receive $50,000 in cash and a VIP trip to New York for an exclusive meeting with their competition mentor.</p>
           <div id="counterSectionWrap" class="clearfix">
-            <a href="#" class="btn pull-left">Sign up &amp; Enter</a>
-            <div id="counterWrap" class="pull-left">
+            <div id="counterWrap" class="pull-left float-in">
               <span>March 31st, 2014 Deadline</span>
               <div class="counter"></div>
             </div>
-            
+            <a href="#signUpModal" data-toggle="modal" class="btn pull-right">Sign up &amp; Enter</a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -125,45 +123,35 @@ frameborder="0" allowfullscreen></iframe>
       <div class="container">
         <div class="col-lg-12">
           <span class="section-statement">Sign up with Shopify and start taking payments immediately with PayPal as your payment processor</span>
-          <div id="worksCircles" class="row">
-            <div class="col-xs-6 col-sm-3 ">
-              <div class="works-circle">
+          <div id="worksCircles" class="row ">
+            <div class="col-sm-6 col-sm-3">
+              <div class="works-circle fade-opener">
                 <img src="img/icon_shopify.png" class="shopify">
-                <span>1. Sign up with Shopify during the Contest period</span>
               </div>
+              <span>1. Sign up with Shopify during the Contest period</span>
             </div>
-            <div class="col-xs-6 col-sm-3 ">
-              <div class="works-circle">
+            <div class="col-sm-6 col-sm-3">
+              <div class="works-circle fade-opener">
                 <img src="img/icon_paypal.png" class="paypal">
-                <span>2. Select PayPal to Process your Payments</span>
               </div>
+              <span>2. Select PayPal to Process your Payments</span>
             </div>
-            <div class="col-xs-6 col-sm-3 ">
-              <div class="works-circle">
+            <div class="col-sm-6 col-sm-3">
+              <div class="works-circle fade-opener">
                 <img src="img/icon_comments.png" class="comments">
-                <span>3. Promote your Business &amp; Start Selling</span>
               </div>
+              <span>3. Promote your Business &amp; Start Selling</span>
             </div>
-            <div class="col-xs-6 col-sm-3 ">
-              <div class="works-circle">
+            <div class="col-sm-6 col-sm-3">
+              <div class="works-circle fade-opener">
                 <img src="img/icon_leaderboard.png" class="leaderboard">
-                <span>4. Watch your Position on the Leaderboard</span>
               </div>
+              <span>4. Watch your Position on the Leaderboard</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--
-    <div id="peopleAgree" class="row blue">
-      <div class="container">
-        <div class="col-lg-12">
-            <span class="section-statement"><strong>138 Million People Agree.</strong> PayPal is the Easiest Way to Send &amp; Receive Payments.</span>
-            <a href="#" class="btn white">Find Out For Yourself</a>
-        </div>
-      </div>
-    </div>
-    -->
     <div id="easyBusiness" class="row white">
       <div class="container">
         <div class="col-lg-6">
@@ -175,66 +163,138 @@ frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-lg-6">
           <h2>Starting a Business is Easy with Shopify &amp; PayPal</h2>
-          <p>By Invite Only is a Singapore-based jewellery label for the urban sophisticated women who is on the constant lookout for whimsy in her life. The brand believes that jewellery completes an outfit and works to create pieces that add pizzazz with the promise of wearability.</p>
-          <a href="#" class="btn pull-right">Get started Today</a>
+          <p>By Invite Only is a Singapore-based jewellery label for the urban sophisticated women who is on the constant lookout for whimsy in her life. The brand believes that jewellery completes an outfit and works to create pieces that add pizzazz with wearability.</p>
+          <a href="#signUpModal" data-toggle="modal" class="btn pull-right">Get started Today</a>
         </div>
       </div>
     </div>
     <div id="liftSales" class="row gray">
       <div class="over-header lift-sales">
-        <h2>Lift Your Sales By Offering PayPal</h2>
+        <h2>Lift Your Sales</h2>
       </div>
       <div class="container">
         <div class="col-lg-12">
-          <span class="section-statement">Did you know that businesses around the world see a sales increase on average 18% after adding PayPal?</span><span class="section-statement">See who else uses PayPal and find out why its consistently the #1 choice in payment processing.</span>
-          <a href="#" class="btn">View The Infographic</a>
+          <span class="section-statement">Find Out Why PayPal is Consistently the #1 Choice in Payment Processing</span>
+          <a href="#sliding" id="toggleInfographic" class="btn">View The Infographic</a>
           <div id="paypalBrands" class="row">
-            <div class="col-xs-6 col-sm-3 ">
+            <div class="col-sm-6 col-sm-3 expand-in">
               <span>Brand that uses PayPal</span>
             </div>
-            <div class="col-xs-6 col-sm-3 ">
+            <div class="col-sm-6 col-sm-3 expand-in">
               <span>Brand that uses PayPal</span>
             </div>
-            <div class="col-xs-6 col-sm-3 ">
+            <div class="col-sm-6 col-sm-3 expand-in">
               <span>Brand that uses PayPal</span>
             </div>
-            <div class="col-xs-6 col-sm-3 ">
+            <div class="col-sm-6 col-sm-3 expand-in">
               <span>Brand that uses PayPal</span>
+            </div>
+          </div>
+          <div id="infographic" class="row">
+            <div class="col-lg-12">
+              <img src="img/paypal_infographic.jpg" class="img-responsive">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="signUp" class="row blue">
+    <div id="signUp" class="row darkgray">
+      <div class="over-header dark signup">
+        <a href="#sliding" id="toggleInfographicClose"><i class="fa fa-arrow-down"></i></a>
+      </div>
       <div class="container">
         <h2>Start Your Business Today</h2>
         <div class="col-md-6 col-md-offset-3">
-          <form role="form">
-            <div class="form-group">
-              <label for="inputEmail">Your Name</label>
-              <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+          <form id="defaultForm" role="form" method="post">
+            <div id="nameContainer" class="form-group">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="inputFirstName">First name<em>&#42;</em></label>
+                  <div id="faIcon" class="input-group merged">
+                    <span class="input-group-addon"><i class="fa fa-user fa-2x"></i></span>
+                    <input type="text" autocomplete="off" class="form-control" id="firstname" name="firstname" placeholder="Enter your first name">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="inputLastName">Last name<em>&#42;</em></label>
+                  <div id="faIcon" class="input-group merged">
+                    <span class="input-group-addon"><i class="fa fa-users fa-2x"></i></span>
+                    <input type="text" autocomplete="off" class="form-control" id="lastname" name="lastname" placeholder="Enter your last name">
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="input">Your Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address">
+            <div id="emailContainer" class="form-group">
+              <label for="input">Email<em>&#42;</em></label>
+              <div id="faIcon" class="input-group merged">
+                <span class="input-group-addon"><i class="fa fa-envelope fa-2x"></i></span>
+                <input type="text" class="form-control" autocomplete="off" id="email" name="email" placeholder="Enter your email address">
+              </div>
             </div>
-            <span class="signup-agreement pull-left">By clicking sign up, you agree to our <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a></span>
-            <button type="submit" class="btn pull-right">Sign Up & Enter</button>
+            <span class="signup-agreement pull-left">By clicking sign up, you agree to our <a href="#terms">Terms &amp; Conditions</a> and <a href="#privacy">Privacy Policy</a></span>
+            <button type="submit" class="btn pull-right">Sign Up &amp; Enter</button>
           </form>
         </div>
-      </div>      
-    </div>
-    <div id="footer">
-      <div class="container">
-        <span>&copy; 2014 PayPal</span>&nbsp;&nbsp;<i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="#">Terms &amp; Conditions</a>&nbsp;&nbsp;<strong>&bull;</strong>&nbsp;&nbsp;<a href="#">Privacy Policy</a>
       </div>
     </div>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <div class="row blue">
+      <div class="over-header blue connect">
+        <i class="fa fa-link"></i>
+      </div>
+      <div class="container">
+        <div class="col-lg-12">
+          <h2>Connect With PayPal</h2>
+          <div id="connectPayPal" class="row">
+            <div class="col-sm-6 col-sm-3 bounce-in">
+              <a href="#facebook">
+                <div class="connect-circle">
+                  <i class="fa fa-facebook fa-5x"></i>
+                </div>
+              </a>
+              <span>Like on Facebook</span>
+            </div>
+            <div class="col-sm-6 col-sm-3 bounce-in">
+              <a href="#twitter">
+                <div class="connect-circle">
+                  <i class="fa fa-twitter fa-5x"></i>
+                </div>
+              </a>
+              <span>Follow on Twitter</span>
+            </div>
+            <div class="col-sm-6 col-sm-3 bounce-in">
+              <a href="#linkedin">
+                <div class="connect-circle">
+                  <i class="fa fa-linkedin fa-5x"></i>
+                </div>
+              </a>
+              <span>Connect on LinkedIn</span>
+            </div>
+            <div class="col-sm-6 col-sm-3 bounce-in">
+              <a href="#youtube">
+                <div class="connect-circle">
+                  <i class="fa fa-youtube fa-5x"></i>
+                </div>
+              </a>
+              <span>Watch on YouTube</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row darkgray small">
+      <div class="container">
+      <span>&copy;&nbsp;PayPal 2014</span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#terms">Terms &amp; Conditions</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#terms">Privacy Policy</a>
+      </div>
+    </div>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/bootstrap-modal.js"></script>
+        <script src="js/bootstrap-modalmanager.js"></script>
+        <script src="js/bootstrap-validator.min.js"></script>
         <script type="text/javascript" src="js/dscountdown.js"></script>
-        <script src="js/main.js"></script>
 
         <script>
             //var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -243,31 +303,250 @@ frameborder="0" allowfullscreen></iframe>
             //s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
         <script type="text/javascript">
-          jQuery(document).ready(function($){
+          $(document).ready(function() {
             $('.counter').dsCountDown({
-              endDate: new Date("March 31, 2014 23:59:00")
+                endDate: new Date("March 31, 2014 23:59:00")
+            });
+
+            // Generate a simple captcha
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            };
+
+            $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+            $('#defaultForm').bootstrapValidator({
+                message: 'Please enter all the fields',
+                fields: {
+                    firstname: {
+                        message: 'Please enter your first and last name',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your first and last name'
+                            }
+                        }
+                    },
+                    lastname: {
+                        message: 'Please enter your first and last name',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your first and last name'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your email address'
+                            },
+                            emailAddress: {
+                                message: 'Please enter a valid email address'
+                            }
+                        }
+                    },
+                    modalFirstName: {
+                        message: 'Please enter your first and last name',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your first and last name'
+                            }
+                        }
+                    },
+                    modalLastName: {
+                        message: 'Please enter your first and last name',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your first and last name'
+                            }
+                        }
+                    },
+                    modalEmail: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your email address'
+                            },
+                            emailAddress: {
+                                message: 'Please enter a valid email address'
+                            }
+                        }
+                    },
+                    captcha: {
+                        validators: {
+                            callback: {
+                                message: 'Wrong answer',
+                                callback: function(value, validator) {
+                                    var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                    return value == sum;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            $('#modalForm').bootstrapValidator({
+                  message: 'Please enter all the fields',
+                  fields: {
+                      firstname: {
+                          message: 'Please enter your first and last name',
+                          validators: {
+                              notEmpty: {
+                                  message: 'Please enter your first and last name'
+                              }
+                          }
+                      },
+                      lastname: {
+                          message: 'Please enter your first and last name',
+                          validators: {
+                              notEmpty: {
+                                  message: 'Please enter your first and last name'
+                              }
+                          }
+                      },
+                      email: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'Please enter your email address'
+                              },
+                              emailAddress: {
+                                  message: 'Please enter a valid email address'
+                              }
+                          }
+                      },
+                      captcha: {
+                          validators: {
+                              callback: {
+                                  message: 'Wrong answer',
+                                  callback: function(value, validator) {
+                                      var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                      return value == sum;
+                                  }
+                              }
+                          }
+                      }
+                  }
+            });
+
+            $.fn.slideFadeToggle  = function(speed, easing, callback) {
+            return this.animate({opacity: 'toggle', height: 'toggle'}, 850, easing);
+            };
+
+            $("#scrollToContent").click(function() {
+              $("html, body").animate({scrollTop: $("#competition").offset().top},850);
+            });
+
+            $("#toggleInfographic").click(function() {
+                $("#infographic").slideFadeToggle();
+                    if($("#infographic").is(":visible")){
+                       $("html, body").animate({scrollTop: $("#infographic").offset().top},850);
+                    }
+            });
+
+            $("#toggleInfographicClose").click(function() {
+                $("html, body").animate({scrollTop: $("#signUp").offset().top},850);         
+             });
+
+
+            $('.carousel').carousel();
+
+          });
+
+          $(window).scroll(function () {
+            if ($(document).scrollTop() == 0) {
+              $('.navbar').removeClass('small-nav');
+              $('.navbar-brand').removeClass('small-nav');
+              $('ul.nav.navbar-nav').removeClass('small-nav');
+              $('a.navbar-brand img').removeClass('small-nav');
+              $('.navbar-nav>li>a').removeClass('small-nav');
+              $('.navbar i.fa').removeClass('small-nav');
+              $('.social-circle').removeClass('small-nav');
+            } else {
+              $('.navbar').addClass('small-nav');
+              $('.navbar-brand').addClass('small-nav');
+              $('ul.nav.navbar-nav').addClass('small-nav');
+              $('a.navbar-brand img').addClass('small-nav');
+              $('.navbar-nav>li>a').addClass('small-nav');
+              $('.navbar i.fa').addClass('small-nav');
+              $('.social-circle').addClass('small-nav');
+            }
+
+            $('.float-in').each(function() {
+              var imagePos = $(this).offset().top;
+
+              var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+675) {
+                  $(this).addClass("bigEntrance");
+                }
+            });
+
+            $('.fade-opener').each(function() {
+              var imagePos = $(this).offset().top;
+
+              var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+775) {
+                  $(this).addClass("fadeIn");
+                }
+            });
+
+            $('.expand-in').each(function() {
+              var imagePos = $(this).offset().top;
+
+              var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+600) {
+                  $(this).addClass("expandUp");
+                }
+            });
+
+            $('.bounce-in').each(function() {
+              var imagePos = $(this).offset().top;
+
+              var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+850) {
+                  $(this).addClass("hatch");
+                }
             });
           });
-          $(window).scroll(function () {
-              if ($(document).scrollTop() == 0) {
-                  $('.navbar').removeClass('small-nav');
-                  $('.navbar-brand').removeClass('small-nav');
-                  $('ul.nav.navbar-nav').removeClass('small-nav');
-                  $('a.navbar-brand img').removeClass('small-nav');
-                  $('.navbar-nav>li>a').removeClass('small-nav');
-                  $('.navbar i.fa').removeClass('small-nav');
-                  $('.social-circle').removeClass('small-nav');
-              } else {
-                  $('.navbar').addClass('small-nav');
-                  $('.navbar-brand').addClass('small-nav');
-                  $('ul.nav.navbar-nav').addClass('small-nav');
-                  $('a.navbar-brand img').addClass('small-nav');
-                  $('.navbar-nav>li>a').addClass('small-nav');
-                  $('.navbar i.fa').addClass('small-nav');
-                  $('.social-circle').addClass('small-nav');
-              }
-          });
-          $('.carousel').carousel();
         </script>
+      <div id="signUpModal" class="modal fadeIn fade" tabindex="-1" data-width="760" style="display: none;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h2 class="modal-title">Get Going With Shopify &amp; PayPal Today</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="modalForm" role="form" method="post">
+                  <div id="nameContainer" class="form-group">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <label for="inputFirstName">First name<em>&#42;</em></label>
+                        <div id="faIcon" class="input-group merged">
+                          <span class="input-group-addon"><i class="fa fa-user fa-2x"></i></span>
+                          <input type="text" autocomplete="off" class="form-control" id="firstname" name="firstname" placeholder="Enter your first name">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="inputLastName">Last name<em>&#42;</em></label>
+                        <div id="faIcon" class="input-group merged">
+                          <span class="input-group-addon"><i class="fa fa-users fa-2x"></i></span>
+                          <input type="text" autocomplete="off" class="form-control" id="lastname" name="lastname" placeholder="Enter your last name">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div id="emailContainer" class="form-group">
+                  <label for="input">Email<em>&#42;</em></label>
+                  <div id="faIcon" class="input-group merged">
+                    <span class="input-group-addon"><i class="fa fa-envelope fa-2x"></i></span>
+                    <input type="text" autocomplete="off" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                </div>
+                <span class="signup-agreement pull-left">By clicking sign up, you agree to our <a href="#terms">Terms &amp; Conditions</a> and <a href="#privacy">Privacy Policy</a></span>
+                <button type="submit" class="btn pull-right">Sign Up &amp; Enter</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </body>
 </html>

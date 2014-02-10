@@ -5,7 +5,7 @@
 	}
 
 	.hero h1 {
-		font-size: 48px;
+		font-size: 48px !important;
 	}
 
 	.hero span {
@@ -25,7 +25,7 @@
 		left: auto;
 	}
 	.navbar-collapse {
-		background-color: #f7f7f7;
+		background-color: #fff;
 	}
 	.social-circle {
 		float: none;
@@ -41,11 +41,77 @@
 		display: none;
 	}
 
-	#worksCircles.row .col-xs-6:nth-of-type(1) > .works-circle {
-		margin-bottom: 95px;
+	.row {
+		padding: 40px 20px;
 	}
 
-	#worksCircles.row .col-xs-6:nth-of-type(2) > .works-circle {
-		margin-bottom: 95px;
+	.row.white {
+		padding-bottom: 60px;
+		text-align: center !important;
+	}
+
+	.row.white a.btn, .row.gray a.btn, .row.darkgray button.btn {
+		float: none !important;
+		display: block;
+		width: 100%;
+	}
+
+	form span.signup-agreement {
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+
+	#counterSectionWrap a.btn.pull-right {
+		float: none !important;
+		display: block;
+		margin-left: 0;
+	}
+
+	#counterSectionWrap #counterWrap.pull-left {
+		float: none !important;
+		display: block;
+		text-align: center;
+	}
+
+	#worksCircles .col-sm-6 span {
+		margin-bottom: 20px;
+	}
+
+	#worksCircles .col-sm-6:nth-last-child(1) span {
+		margin-bottom: 0;
+	}
+
+	#signUp form {
+  		text-align: center;
+	}
+
+	#signUp form button.btn {
+  		margin-bottom: 20px;
+	}
+
+	.btn {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+		font-size: 16px;
+		width: 100%;
+	}
+
+	.btn.cta {
+		width: auto;
+	}
+
+	#carouselArticles .item.border-mask > .slide-border {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	#carouselArticles .carousel-control {
+		opacity: 0.15;
+	}
+
+	#headerColumn > h1 {
+		text-align: center;
 	}
 }

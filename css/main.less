@@ -9,6 +9,7 @@
 html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif !important;
+  background-color: #f1f1f1 !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -19,13 +20,16 @@ h1, h2, h3 {
   color: #444 !important;
 }
 
+h1 {
+  font-size: 52px !important;
+}
+
 p, span {
   color: #767676 !important;
 }
 
-#makeItScroll {
-  height: 450px;
-  background: white;
+label em {
+  color: #a94442;
 }
 
 /*----------------------------------------------------//
@@ -160,6 +164,7 @@ p, span {
 #heroWrap {
   height: 100%;
   min-height: 768px;
+  max-height: 1080px;
   position: relative;
 }
 
@@ -169,19 +174,24 @@ p, span {
   width: 100%;
   text-align: center;
   padding: 0 40px;
-  z-index: 2;
+  z-index: 9;
 }
 
 .hero h1 {
   font-weight: 800 !important;
-  font-size: 68px;
+  font-size: 68px !important;
   color: #f1f1f1 !important;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 8px 23px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.75), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 8px 23px rgba(0, 0, 0, 0.1);
 }
+
 .hero span {
   font-size: 24px;
   color: #f1f1f1 !important;
-  text-shadow: 0px 1px 1px #000000, 0px 2px 3px rgba(0, 0, 0, 0.4), 0px 6px 8px rgba(0, 0, 0, 0.1), 0px 4px 23px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.75), 0px 2px 3px rgba(0, 0, 0, 0.4), 0px 6px 8px rgba(0, 0, 0, 0.1), 0px 4px 23px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero span strong {
@@ -237,6 +247,7 @@ p, span {
   margin-left: -47px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  z-index: 9;
 }
 
 #discoverMore a {
@@ -266,6 +277,14 @@ p, span {
     -o-transform: translateX(0px) translateY(2px);
     -ms-transform: translateX(0px) translateY(2px);
     transform: translateX(0px) translateY(2px);
+  }
+}
+
+a#toggleInfographicClose > i {
+  color: #f1f1f1 !important;
+
+  &:hover {
+    color: #fff !important;
   }
 }
 
@@ -319,6 +338,17 @@ a.navbar-brand img.small-nav {
   line-height: 36px;
 }
 
+#competition {
+  position: relative;
+  z-index: 10;
+}
+
+#infographic.row {
+  padding-top: 40px;
+  padding-bottom: 0;
+  display: none;
+}
+
 /*----------------------------------------------------//
 //--------------Responsive YouTube Embed-------------//
 //--------------------------------------------------*/
@@ -326,7 +356,9 @@ a.navbar-brand img.small-nav {
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px; height: 0; overflow: hidden;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
  
 .video-container iframe,
@@ -339,10 +371,17 @@ a.navbar-brand img.small-nav {
   height: 100%;
 }
 
+.expand-in, .bounce-in {
+  visibility: hidden;
+}
+
 /*----------------------------------------------------//
 //-----------------------Counter---------------------//
 //--------------------------------------------------*/
 
+#counterWrap {
+  visibility: hidden;
+}
 
 #counterWrap span {
   display: block;
@@ -353,7 +392,7 @@ a.navbar-brand img.small-nav {
 }
 
 #counterSectionWrap a.btn {
-  margin: 26px 10px 26px 0;
+  margin: 26px 10px;
 }
 
 .counter {
@@ -365,7 +404,7 @@ a.navbar-brand img.small-nav {
 
 .ds-element {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 5px;
   text-align: center;
 }
 
@@ -393,6 +432,17 @@ a.navbar-brand img.small-nav {
   border-bottom-color: #ececec;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  z-index: 11;
+}
+
+.over-header.dark {
+  background-color: #232323;
+  border: none;
+}
+
+.over-header.blue {
+  background-color: #057bbf;
+  border: none;
 }
 
 .over-header.how-it-works {
@@ -401,8 +451,21 @@ a.navbar-brand img.small-nav {
 }
 
 .over-header.lift-sales {
-  width: 560px;
-  margin-left: -280px;
+  width: 258px;
+  margin-left: -129px;
+}
+
+.over-header.dark.signup, .over-header.blue.connect {
+  top: -32px;
+  margin-left: -35px;
+  height: auto;
+  border-top-left-radius: 52px;
+  border-top-right-radius: 52px;
+}
+
+.over-header.dark.signup i, .over-header.blue.connect i {
+  font-size: 2em;
+  padding: 18px 20px 0px 20px;
 }
 
 .over-header h2 {
@@ -417,7 +480,7 @@ a.navbar-brand img.small-nav {
   font-weight: 300;
 }
 
-.row.blue .section-statement {
+.row.darkgray .section-statement {
   color: #f1f1f1 !important;
   margin-bottom: 10px;
 }
@@ -427,6 +490,10 @@ a.navbar-brand img.small-nav {
 }
 
 .works-circle {
+  visibility: hidden;
+}
+
+.works-circle, .connect-circle {
   height: 200px;
   width: 200px;
   border: 2px solid #057bbf;
@@ -436,18 +503,87 @@ a.navbar-brand img.small-nav {
   position: relative;
 }
 
-.works-circle > img {
+.connect-circle {
+  border: 2px solid #f1f1f1;
+  background-color: #232323;
+}
+
+a .connect-circle {
+  color: #ececec;
+  
+}
+
+.connect-circle > i {
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 15px;
+  background-color: #232323;
+  .transition(all 250ms ease-in-out);
+}
+
+.connect-circle > i.fa-facebook {
+  padding: 10px 33px;
+}
+
+.connect-circle > i.fa-twitter {
+  padding: 10px 13px;
+}
+
+.connect-circle > i.fa-linkedin, .connect-circle > i.fa-youtube {
+  padding: 10px 15.5px;
+}
+
+a .connect-circle i:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0px 3px 0px #767676,
+              0px 4px 3px rgba(0, 0, 0, 0.4),
+              0px 8px 13px rgba(0, 0, 0, 0.1),
+              0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+a .connect-circle i.fa-facebook:hover {
+  color: #3B5998;
+  text-shadow: 0px 3px 0px #18417d,
+               0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0, 0, 0, 0.1),
+               0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+a .connect-circle i.fa-twitter:hover {
+  color: #55ACEE;
+  text-shadow: 0px 3px 0px #0b82c1,
+               0px 2px 0px #0b82c1,
+               0px 1px 0px #0b82c1,
+               0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0, 0, 0, 0.1),
+               0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+a .connect-circle i.fa-linkedin:hover {
+  color: #4875B4;
+  text-shadow: 0px 3px 0px #295d9a,
+               0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0, 0, 0, 0.1),
+               0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+a .connect-circle i.fa-youtube:hover {
+  color: #FF3333;
+  text-shadow: 0px 3px 0px #a60000,
+               0px 1px 0px #a60000,
+               0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0, 0, 0, 0.1),
+               0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.works-circle > img, .connect-circle > i {
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-.works-circle > span {
-  position: absolute;
-  bottom: -72px;
+#worksCircles span, #connectPayPal span {
   display: block;
-  width: 100%;
-  left: 0;
   font-style: italic;
   font-weight: 300;
   color: #444 !important;
@@ -484,6 +620,7 @@ a.navbar-brand img.small-nav {
 
 #liftSales #paypalBrands.row {
   padding: 0;
+  font-weight: 300;
 }
 
 #signUp h2 {
@@ -513,16 +650,163 @@ a.navbar-brand img.small-nav {
   color: #dededd !important;
 }
 
+#connectPayPal span {
+  color: #f1f1f1 !important;
+}
+
+/*----------------------------------------------------//
+//-------------------Features Page-------------------//
+//--------------------------------------------------*/
+
+#headerContainer {
+  margin-top: 104px;
+}
+
+#headerColumn > h1 {
+  margin: 0;
+  color: #f1f1f1 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.75), 0px 0px 13px rgba(0, 0, 0, 0.1), 0px 6px 23px rgba(0, 0, 0, 0.1);
+}
+
+#quoteWrap {
+  text-transform: uppercase;
+  margin-top:14%;
+  .clearfix();
+}
+
+#quoteWrap i.fa-quote-left {
+  float: left;
+  margin-left: 10%;
+}
+
+#quoteWrap i.fa-quote-right {
+  float: right;
+  margin-right: 10%;
+}
+
+#quoteWrap span {
+  background-color: white;
+  font-size: 24px;
+  font-weight: 300;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+hr.video-spacer, hr.img-spacer {
+  margin-top: 92px;
+  margin-bottom: 26px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid #ddd;
+}
+
+hr.img-spacer {
+  margin:26px 20px;
+}
+
+.bab-winner-image {
+  .img-responsive();
+}
+
+.features-header {
+  background: url(../img/bg_header.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/*----------------------------------------------------//
+//-------------------Resource Page-------------------//
+//--------------------------------------------------*/
+
+.resources-header {
+  background: url(../img/bg_header_resources.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.resource-thumbnail {
+  height: 142px;
+  width: 142px;
+  background-color: #ececec;
+  margin: 55px auto;
+  position: relative;
+  border-radius: 71px;
+  border: 2px solid #057bbf;
+}
+
+.resource-thumbnail  i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -29px;
+  margin-top: -40px;
+  color: #ececec;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.55);  
+}
+
+.resource-thumbnail  i:hover {
+  color: #fff;
+}
+
+.resource-thumbnail.webinar {
+  background: url(../img/thumb-paypal-webinar.jpg) no-repeat -104px 0;
+  -webkit-background-size: 300% 100%;
+  -moz-background-size: 300% 100%;
+  -o-background-size: 300% 100%;
+  background-size: 300% 100%;
+}
+
+.resource-thumbnail.express-checkout {
+  background: url(../img/thumb-express-checkout.jpg) no-repeat -180px 0;
+  -webkit-background-size: 270% 100%;
+  -moz-background-size: 270% 100%;
+  -o-background-size: 270% 100%;
+  background-size: 270% 100%;
+}
+
+.resource-thumbnail.why-paypal {
+  background: url(../img/thumb-why-paypal.jpg) no-repeat -253px center;
+  -webkit-background-size: 300% 100%;
+  -moz-background-size: 300% 100%;
+  -o-background-size: 300% 100%;
+  background-size: 300% 100%;  
+}
+
+.resource-thumbnail.what-express-checkout {
+  background: url(../img/thumb-paypal-cash.jpg) no-repeat -225px center;
+  -webkit-background-size: 380% 100%;
+  -moz-background-size: 380% 100%;
+  -o-background-size: 380% 100%;
+  background-size: 380% 100%;
+}
+
+
+.col-md-8 #resourceArticleWrap:nth-last-child(1) {
+  margin-bottom: 0;
+}
 
 
 /*----------------------------------------------------//
 //---------------------Bootstrap---------------------//
 //--------------------------------------------------*/
 @import "/bootstrap/bootstrap.less";
+@import "fadeIn.less";
 /*----------------------------------------------------//
 //----------------Bootstrap Overrides----------------//
 //--------------------------------------------------*/
 @import "bootstrap-overrides.less";
+@import "bootstrap-modal.less";
 /*----------------------------------------------------//
 //----------------------Buttons----------------------//
 //--------------------------------------------------*/
@@ -531,14 +815,6 @@ a.navbar-brand img.small-nav {
 //------------------Min Width 768--------------------//
 //--------------------------------------------------*/
 @import "min-768.less";
-/*----------------------------------------------------//
-//------------------Min Width 992--------------------//
-//--------------------------------------------------*/
-@import "max-768.less";
-/*----------------------------------------------------//
-//------------------Miax Width 400-------------------//
-//--------------------------------------------------*/
-@import "max-400.less";
 /*----------------------------------------------------//
 //------------------Min Width 992--------------------//
 //--------------------------------------------------*/
@@ -551,6 +827,79 @@ a.navbar-brand img.small-nav {
 //------------------Min Width 1200-------------------//
 //--------------------------------------------------*/
 @import "min-1200.less";
+/*----------------------------------------------------//
+//------------------Max Width 1200-------------------//
+//--------------------------------------------------*/
+@import "max-1200.less";
+/*----------------------------------------------------//
+//------------------Min Width 992--------------------//
+//--------------------------------------------------*/
+@import "max-768.less";
+/*----------------------------------------------------//
+//------------------Miax Width 400-------------------//
+//--------------------------------------------------*/
+@import "max-400.less";
+
+#articleSliders.absoluteTop {
+  position: absolute;
+  top: 110px;
+  bottom: auto;
+  .transition(all 250ms ease-in-out);
+}
+
+#articleSliders.fixedScroll {
+  position: fixed;
+  top: 70px;
+  bottom: auto;
+  height: 46px;
+  width: 46px;
+  visibility: visible;
+  opacity: 0.55;
+  .transition(all 250ms ease-in-out);
+}
+
+#carouselArticles .carousel-control.fixedScroll i {
+  line-height: 46px;
+  .transition(all 250ms ease-in-out);
+}
+
+#indicator.row.gray.fixedScroll {
+  width: 100%;
+  position: fixed;
+  top: 62px;
+  z-index: 12;
+  padding: 0;
+  border-bottom-color: transparent;
+  background-color: rgba(71, 71, 71, 0.25);
+  .transition(background-color 250ms ease-in-out);
+}
+
+#articleSliders.absoluteBottom, #indicator.row.gray.absoluteBottom {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+}
+
+#articleSliders.absoluteBottom {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  height: 46px;
+  width: 46px;
+}
+
+#articleSliders.absoluteBottom i {
+  line-height: 46px;
+}
+
+#indicator.row.gray.absoluteTop {
+  position: absolute;
+  top: -102px;
+}
+
+#indicator.row.gray.absoluteBottom {
+  padding: 0;
+}
 /*----------------------------------------------------//
 //------------------Min Width 1400-------------------//
 //--------------------------------------------------*/
